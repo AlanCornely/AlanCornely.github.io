@@ -1,2 +1,92 @@
-asdasdasd
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio - Alan M. Cornely</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Adicionando animação personalizada */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
 
+    .fade-in {
+      animation: fadeIn 1s ease-in-out;
+    }
+  </style>
+</head>
+<body class="bg-black text-white font-sans">
+  <!-- Header -->
+  <header class="flex items-center justify-between p-6 bg-gradient-to-r from-purple-700 via-purple-800 to-purple-900 shadow-lg">
+    <h1 class="text-3xl font-bold">Alan M. Cornely</h1>
+    <nav>
+      <ul class="flex space-x-6">
+        <li><a href="#about" class="hover:text-purple-400 transition duration-300">Sobre</a></li>
+        <li><a href="#projects" class="hover:text-purple-400 transition duration-300">Projetos</a></li>
+        <li><a href="#contact" class="hover:text-purple-400 transition duration-300">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="h-screen flex flex-col items-center justify-center bg-purple-900 text-center fade-in">
+    <h2 class="text-5xl font-extrabold mb-4">Olá, eu sou <span class="text-purple-300">Alan M. Cornely</span></h2>
+    <p class="text-lg text-purple-200">Desenvolvedor apaixonado por criar experiências incríveis na web.</p>
+    <a href="#projects" class="mt-8 px-6 py-3 bg-purple-700 text-white font-bold rounded-full shadow-md hover:bg-purple-800 transition duration-300">Veja meus projetos</a>
+  </section>
+
+  <!-- Sobre -->
+  <section id="about" class="py-16 px-8">
+    <div class="max-w-4xl mx-auto text-center">
+      <h3 class="text-4xl font-bold text-purple-400 mb-6">Sobre Mim</h3>
+      <p class="text-lg text-gray-300">Sou um desenvolvedor front-end com experiência em criar designs modernos e funcionais. Adoro desafios e busco sempre aprender algo novo.</p>
+    </div>
+  </section>
+
+  <!-- Projetos -->
+  <section id="projects" class="py-16 px-8 bg-purple-950">
+    <div class="max-w-6xl mx-auto text-center">
+      <h3 class="text-4xl font-bold text-purple-300 mb-6">Meus Projetos</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Card de Projeto -->
+        <div class="bg-purple-800 rounded-lg shadow-lg p-6 hover:scale-105 transition duration-300">
+          <h4 class="text-2xl font-semibold text-purple-200 mb-4">Projeto 1</h4>
+          <p class="text-gray-300">Uma breve descrição do projeto incrível que fiz.</p>
+        </div>
+        <!-- Card de Projeto -->
+        <div class="bg-purple-800 rounded-lg shadow-lg p-6 hover:scale-105 transition duration-300">
+          <h4 class="text-2xl font-semibold text-purple-200 mb-4">Projeto 2</h4>
+          <p class="text-gray-300">Outra breve descrição de outro projeto.</p>
+        </div>
+        <!-- Card de Projeto -->
+        <div class="bg-purple-800 rounded-lg shadow-lg p-6 hover:scale-105 transition duration-300">
+          <h4 class="text-2xl font-semibold text-purple-200 mb-4">Projeto 3</h4>
+          <p class="text-gray-300">Mais um projeto que mostra minhas habilidades.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contact" class="py-16 px-8">
+    <div class="max-w-4xl mx-auto text-center">
+      <h3 class="text-4xl font-bold text-purple-400 mb-6">Entre em Contato</h3>
+      <p class="text-gray-300 mb-6">Gostou do que viu? Entre em contato para trabalharmos juntos!</p>
+      <a href="mailto:alan.cornely@email.com" class="px-6 py-3 bg-purple-700 text-white font-bold rounded-full shadow-md hover:bg-purple-800 transition duration-300">Me mande um e-mail</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-4 bg-purple-900 text-center text-purple-400">
+    <p>&copy; 2024 Alan M. Cornely. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
